@@ -7,6 +7,7 @@ function SearchForm(props) {
         <div className="row">
             <div className="col-sm-12 d-flex justify-content-center">
                 <input 
+                    value={props.search}
                     type="text" 
                     className="form-control"
                     onChange={props.handleSearchChange}
