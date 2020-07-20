@@ -103,12 +103,12 @@ class DataArea extends Component {
         default:
           if (ascDesc === "D") {
             sortedEmployees = this.state.filteredEmployees.sort((a,b) => (a.name.first > b.name.first) ? 1:-1)
-            objIndex = columnTracker.findIndex((obj => obj.colName === "Name"))
+            objIndex = columnTracker.findIndex((obj => obj.colName === "Picture"))
             columnTracker[objIndex].order = "A";
           }
           else {
             sortedEmployees = this.state.filteredEmployees.sort((a,b) => (a.name.first > b.name.first) ? -1:1) 
-            objIndex = columnTracker.findIndex((obj => obj.colName === "Name"))
+            objIndex = columnTracker.findIndex((obj => obj.colName === "Picture"))
             columnTracker[objIndex].order = "D";
           }
           break;                      
@@ -134,15 +134,16 @@ class DataArea extends Component {
 
   render() {
       return (
-        <div>
-            <Nav handleSearchChange={this.handleSearchChange} />
-            <DataTable 
-              filteredEmployees={this.state.filteredEmployees}
-              handleSort={this.handleSort.bind(this)}              
-              columns={this.state.columns}
-            />
-
-        </div>
+        <>
+          <Nav handleSearchChange={this.handleSearchChange} />
+          <div className="col-sm-12 d-flex justify-content-center">
+              <DataTable 
+                filteredEmployees={this.state.filteredEmployees}
+                handleSort={this.handleSort.bind(this)}              
+                columns={this.state.columns}
+              />
+          </div>
+        </>
       );
   }
 };

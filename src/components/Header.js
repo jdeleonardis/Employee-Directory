@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className="header text-center">
           <h2>Employee Directory</h2>
-          <p>Click on carrots to filter by heading or use the search box to narrow your results</p>
+          <p>Click on column headers to filter by heading or use the search box to narrow your results</p>
         </header>
     )
 }
