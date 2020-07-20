@@ -3,14 +3,12 @@ import React from "react";
 function DataTable(props) {
     return (
 
-        <table class="table">
+        <table className="table">
             <thead>
-                <tr>
-                <th scope="col">Pic</th>
-                <th scope="col">Name</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Email</th>
-                <th scope="col">DOB</th>                
+                <tr className="tr-header">
+                    {props.columns.map(column => (                        
+                        <th onClick={() => props.handleSort(column.colName)} className="remove" scope="col" key={column.colName}>{column.colName}</th>
+                    ))}
                 </tr>
             </thead>
             <tbody>

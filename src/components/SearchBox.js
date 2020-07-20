@@ -16,20 +16,6 @@ function SearchForm(props) {
             </div>
         </div>
     </div>
-
-//<input type="text" className="form-control" />
-    // <form className="search">
-    //   <div className="form-group">        
-    //     <input
-    //       //value={props.search}
-    //       onChange={props.handleSearchChange}
-    //       name="search"
-    //       type="text"
-    //       className="form-control"
-    //       placeholder="Search"
-    //     />
-    //   </div>
-    // </form>
   );
 }
 
