@@ -22,7 +22,7 @@ This project uses React to build the initial structure of the files.  Included w
 npm run deploy from a terminal
 
 ## Usage
-run npm start
+Navigate to application page at https://jdeleonardis.github.io/Employee-Directory/
 
 ## Contributors
 jdeleonardis
