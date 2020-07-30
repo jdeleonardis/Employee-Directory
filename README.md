@@ -2,7 +2,7 @@
 
 
 # Project Title
-Homework 19 Employee Directory
+Employee Directory
 
 ## Table of Contents:
 - [Repository](#Repository)
