@@ -38,7 +38,7 @@ class DataArea extends Component {
   }
 
   handleSearchChange = event => {
-    const newFilteredEmployees = this.state.originalEmployees.filter(employee => employee.name.first.includes(event.target.value) || employee.name.last.includes(event.target.value));    
+    const newFilteredEmployees = this.state.originalEmployees.filter(employee => employee.name.first.toLowerCase().includes(event.target.value.toLowerCase()) || employee.name.last.toLowerCase().includes(event.target.value.toLowerCase()));    
     this.setState({ filteredEmployees: newFilteredEmployees });
   };
   
