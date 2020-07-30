@@ -2,7 +2,7 @@
   "name": "hw19_emp_dir",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jdeleonardis.github.io/homework_19_employee_directory",
+  "homepage": "https://jdeleonardis.github.io/Employee-Directory/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
