@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Nav from "./Nav";
 import DataTable from "./DataTable";
+//import EmployeeData from "../employees.json"
 
 class DataArea extends Component {
   state = {
@@ -130,6 +131,11 @@ class DataArea extends Component {
         })
       )
       .catch(err => console.log(err));
+     
+    // this.setState({
+    //   originalEmployees: EmployeeData.results,
+    //   filteredEmployees: EmployeeData.results
+    // });
   };
 
   render() {
