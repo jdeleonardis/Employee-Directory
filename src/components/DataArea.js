@@ -38,6 +38,7 @@ class DataArea extends Component {
   }
 
   handleSearchChange = event => {
+    //added toLowerCase to handle any case entry
     const newFilteredEmployees = this.state.originalEmployees.filter(employee => employee.name.first.toLowerCase().includes(event.target.value.toLowerCase()) || employee.name.last.toLowerCase().includes(event.target.value.toLowerCase()));    
     this.setState({ filteredEmployees: newFilteredEmployees });
   };
