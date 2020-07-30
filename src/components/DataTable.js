@@ -9,7 +9,7 @@ function DataTable(props) {
             <thead>
                 <tr className="tr-header">
                     {props.columns.map(column => (                        
-                        <th onClick={() => props.handleSort(column.colName)} scope="col" key={column.colName}>{column.colName} <i class="fa fa-fw fa-sort"></i></th>
+                        <th onClick={() => props.handleSort(column.colName)} scope="col" key={column.colName}>{column.colName} <i className="fa fa-fw fa-sort"></i></th>
                     ))}
                 </tr>
             </thead>
