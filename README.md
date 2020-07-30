@@ -31,5 +31,5 @@ jdeleonardis
 N/A
 
 ## License
-MIT
+This project is licensed under ![badge](https://img.shields.io/badge/License-MIT-blue).
 
